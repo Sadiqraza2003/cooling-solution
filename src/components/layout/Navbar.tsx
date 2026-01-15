@@ -37,8 +37,8 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                  ? "text-primary"
+                  : "text-muted-foreground"
                   }`}
               >
                 {link.name}
@@ -48,7 +48,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+919876543210">
+            <a href="tel:+917651878084">
               <Button variant="hero" size="default">
                 <Phone className="w-4 h-4" />
                 Call Now
@@ -86,14 +86,14 @@ const Navbar = () => {
                   to={link.path}
                   onClick={() => setIsOpen(false)}
                   className={`text-base font-medium py-2 transition-colors hover:text-primary ${location.pathname === link.path
-                      ? "text-primary"
-                      : "text-muted-foreground"
+                    ? "text-primary"
+                    : "text-muted-foreground"
                     }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <a href="tel:+919876543210" className="mt-2">
+              <a href="tel:+917651878084" className="mt-2">
                 <Button variant="hero" size="lg" className="w-full">
                   <Phone className="w-4 h-4" />
                   Call Now

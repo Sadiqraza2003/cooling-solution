@@ -141,11 +141,10 @@ const Pricing = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className={`relative bg-background rounded-2xl p-6 border transition-all duration-300 hover:shadow-lg ${
-                  service.popular
+                className={`relative bg-background rounded-2xl p-6 border transition-all duration-300 hover:shadow-lg ${service.popular
                     ? "border-primary shadow-card ring-2 ring-primary/20"
                     : "border-border shadow-soft"
-                }`}
+                  }`}
               >
                 {service.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -283,7 +282,7 @@ const Pricing = () => {
               Contact us for a free inspection and personalized quote for your AC needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919876543210">
+              <a href="tel:+917651878084">
                 <Button variant="hero" size="lg">
                   <Phone className="w-5 h-5" />
                   Call for Quote

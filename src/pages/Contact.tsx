@@ -250,7 +250,7 @@ const Contact = () => {
                 <p className="text-primary-foreground/80 mb-6">
                   Need immediate assistance? Call us now for quick service!
                 </p>
-                <a href="tel:+919876543210">
+                <a href="tel:+917651878084">
                   <Button variant="hero" size="lg" className="w-full">
                     <Phone className="w-5 h-5" />
                     Call: +91 7651878084
@@ -272,7 +272,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-foreground">Phone</h4>
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+917651878084"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
                         +91 7651878084

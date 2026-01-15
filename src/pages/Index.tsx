@@ -143,7 +143,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
-              <a href="tel:+919876543210">
+              <a href="tel:+917651878084">
                 <Button variant="hero" size="lg" className="w-full sm:w-auto">
                   <Phone className="w-5 h-5" />
                   Call Now
@@ -290,7 +290,7 @@ const Home = () => {
                   Get a free inspection and quote for your AC repair or installation needs. Our team is ready to help!
                 </p>
                 <div className="space-y-4">
-                  <a href="tel:+919876543210" className="block">
+                  <a href="tel:+917651878084" className="block">
                     <Button variant="hero" size="lg" className="w-full">
                       <Phone className="w-5 h-5" />
                       Call: +91 7651878084
@@ -329,7 +329,7 @@ const Home = () => {
               Contact us today and let our experts take care of all your cooling needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919876543210">
+              <a href="tel:+917651878084">
                 <Button variant="hero" size="lg">
                   <Phone className="w-5 h-5" />
                   Call Now

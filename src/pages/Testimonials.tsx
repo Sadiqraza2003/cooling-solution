@@ -190,7 +190,7 @@ const Testimonials = () => {
               Join hundreds of satisfied customers in Varanasi. Book your service today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919876543210">
+              <a href="tel:+917651878084">
                 <Button variant="hero" size="lg">
                   <Phone className="w-5 h-5" />
                   Call Now
