@@ -46,7 +46,7 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Solutions",
-    description: "Complete cooling solutions for offices and businesses",
+    description: "Complete Varansi Cooling Solutions for offices and businesses",
   },
 ];
 
@@ -134,7 +134,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto"
             >
-              Fast, Affordable & Professional Cooling Solutions for Home and Office. Get your AC running smoothly with our expert technicians.
+              Fast, Affordable & Professional Varansi Cooling Solutions for Home and Office. Get your AC running smoothly with our expert technicians.
             </motion.p>
 
             <motion.div
@@ -246,7 +246,7 @@ const Home = () => {
                 Trusted Cooling Experts in Varanasi
               </h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                With years of experience and a commitment to excellence, Cooling Solution has become the go-to choice for AC services in Varanasi. We combine technical expertise with outstanding customer service.
+                With years of experience and a commitment to excellence, Varansi Cooling Solution has become the go-to choice for AC services in Varanasi. We combine technical expertise with outstanding customer service.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-6">

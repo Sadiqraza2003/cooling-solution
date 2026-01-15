@@ -14,8 +14,8 @@ import {
 } from "lucide-react";
 
 const stats = [
-  { value: "5+", label: "Years Experience" },
-  { value: "1000+", label: "Happy Customers" },
+  { value: "15+", label: "Years Experience" },
+  { value: "2000+", label: "Happy Customers" },
   { value: "50+", label: "Daily Services" },
   { value: "100%", label: "Satisfaction" },
 ];
@@ -59,7 +59,7 @@ const About = () => {
               About Us
             </span>
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground mt-2 mb-6">
-              About Cooling Solution
+              About Varansi Cooling Solution
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed">
               Your trusted partner for all AC and cooling needs in Varanasi
@@ -86,10 +86,10 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Cooling Solution is a trusted AC service provider in Varanasi, founded by <strong className="text-foreground">Syed Naqi Haidar</strong>. With a passion for delivering excellent service and years of experience in the cooling industry, we have become the preferred choice for homes and businesses across the city.
+                  Varansi Cooling Solution is a trusted AC service provider in Varanasi, founded by <strong className="text-foreground">Syed Naqi Haidar</strong>. With a passion for delivering excellent service and years of experience in the cooling industry, we have become the preferred choice for homes and businesses across the city.
                 </p>
                 <p>
-                  We specialize in AC repair, installation, maintenance, and complete cooling solutions for residential and commercial customers. Our mission is to provide fast, reliable, and affordable cooling services across Varanasi.
+                  We specialize in AC repair, installation, maintenance, and complete Varansi Cooling Solutions for residential and commercial customers. Our mission is to provide fast, reliable, and affordable cooling services across Varanasi.
                 </p>
                 <p>
                   What sets us apart is our commitment to customer satisfaction. We believe in doing the job right the first time, using quality parts, and ensuring our customers are completely satisfied with our work.
@@ -171,7 +171,7 @@ const About = () => {
                 Our Vision
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                To become the leading cooling solutions provider in Varanasi and beyond, known for our expertise, reliability, and commitment to customer satisfaction. We envision a future where every home and office in our service area enjoys optimal comfort.
+                To become the leading Varansi Cooling Solutions provider in Varanasi and beyond, known for our expertise, reliability, and commitment to customer satisfaction. We envision a future where every home and office in our service area enjoys optimal comfort.
               </p>
             </motion.div>
           </div>

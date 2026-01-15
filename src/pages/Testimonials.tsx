@@ -23,7 +23,7 @@ const testimonials = [
     name: "Mohammad Ali",
     location: "Godowlia, Varanasi",
     rating: 5,
-    review: "Got my office AC installed by Cooling Solution. Excellent work and very professional team. The installation was clean and they explained everything properly.",
+    review: "Got my office AC installed by Varansi Cooling Solution. Excellent work and very professional team. The installation was clean and they explained everything properly.",
     service: "AC Installation",
   },
   {
@@ -155,10 +155,10 @@ const Testimonials = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-8"
           >
             {[
-              { value: "1000+", label: "Happy Customers" },
+              { value: "2000+", label: "Happy Customers" },
               { value: "4.9", label: "Average Rating" },
               { value: "98%", label: "Satisfaction Rate" },
-              { value: "5+", label: "Years of Service" },
+              { value: "15+", label: "Years of Service" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="font-heading text-3xl md:text-4xl font-bold text-primary mb-1">

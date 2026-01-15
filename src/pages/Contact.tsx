@@ -43,7 +43,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name.trim() || !formData.phone.trim()) {
       toast({
@@ -66,15 +66,15 @@ const Contact = () => {
     }
 
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    
+
     toast({
       title: "Message Sent!",
       description: "We'll get back to you within 24 hours.",
     });
-    
+
     setFormData({
       name: "",
       phone: "",
@@ -275,7 +275,7 @@ const Contact = () => {
                         href="tel:+919876543210"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +91 98765 43210
+                        +91 7651878084
                       </a>
                     </div>
                   </div>
@@ -335,7 +335,7 @@ const Contact = () => {
                     Syed Naqi Haidar
                   </h4>
                   <p className="text-muted-foreground text-sm">
-                    Owner, Cooling Solution
+                    Owner, Varansi Cooling Solution
                   </p>
                 </div>
               </div>

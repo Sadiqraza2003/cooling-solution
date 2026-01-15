@@ -26,7 +26,7 @@ const Navbar = () => {
               <Snowflake className="w-6 h-6 text-primary-foreground" />
             </div>
             <span className="font-heading font-bold text-xl text-foreground">
-              Cooling Solution
+              Varansi Cooling Solution
             </span>
           </Link>
 
@@ -36,11 +36,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname === link.path
+                className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path
                     ? "text-primary"
                     : "text-muted-foreground"
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>
@@ -86,11 +85,10 @@ const Navbar = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`text-base font-medium py-2 transition-colors hover:text-primary ${
-                    location.pathname === link.path
+                  className={`text-base font-medium py-2 transition-colors hover:text-primary ${location.pathname === link.path
                       ? "text-primary"
                       : "text-muted-foreground"
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>

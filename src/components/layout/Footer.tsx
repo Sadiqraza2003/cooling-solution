@@ -13,7 +13,7 @@ const Footer = () => {
                 <Snowflake className="w-6 h-6 text-primary-foreground" />
               </div>
               <span className="font-heading font-bold text-xl">
-                Cooling Solution
+                Varansi Cooling Solution
               </span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
@@ -73,7 +73,7 @@ const Footer = () => {
                 <div>
                   <p className="text-sm text-primary-foreground/70">Call Us</p>
                   <a href="tel:+919876543210" className="text-sm font-medium hover:text-primary transition-colors">
-                    +91 98765 43210
+                    +91 7651878084
                   </a>
                 </div>
               </li>
@@ -101,7 +101,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 text-sm">
-              © {new Date().getFullYear()} Cooling Solution. All rights reserved.
+              © {new Date().getFullYear()} Varansi Cooling Solution. All rights reserved.
             </p>
             <p className="text-primary-foreground/60 text-sm">
               Owner: Syed Naqi Haidar
