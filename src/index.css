@@ -91,6 +91,10 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom tokens dark mode */
+    --gradient-frost: linear-gradient(180deg, hsl(215 50% 8%) 0%, hsl(215 45% 12%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(215 45% 12%) 0%, hsl(215 50% 8%) 100%);
   }
 }
 

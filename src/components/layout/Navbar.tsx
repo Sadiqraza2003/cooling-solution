@@ -59,16 +59,19 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
-          >
-            {isOpen ? (
-              <X className="w-6 h-6 text-foreground" />
-            ) : (
-              <Menu className="w-6 h-6 text-foreground" />
-            )}
-          </button>
+          <div className="flex md:hidden items-center gap-2">
+            <ModeToggle />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 rounded-lg hover:bg-muted transition-colors"
+            >
+              {isOpen ? (
+                <X className="w-6 h-6 text-foreground" />
+              ) : (
+                <Menu className="w-6 h-6 text-foreground" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -96,7 +99,6 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="flex items-center justify-between gap-4 mt-2">
-                <ModeToggle />
                 <a href="tel:+917651878084" className="flex-1">
                   <Button variant="hero" size="lg" className="w-full">
                     <Phone className="w-4 h-4" />
