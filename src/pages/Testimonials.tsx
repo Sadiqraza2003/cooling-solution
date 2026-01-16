@@ -23,7 +23,7 @@ const testimonials = [
     name: "Mohammad Ali",
     location: "Godowlia, Varanasi",
     rating: 5,
-    review: "Got my office AC installed by Varansi Cooling Solution. Excellent work and very professional team. The installation was clean and they explained everything properly.",
+    review: "Got my office AC installed by Varanasi Cooling Solution. Excellent work and very professional team. The installation was clean and they explained everything properly.",
     service: "AC Installation",
   },
   {

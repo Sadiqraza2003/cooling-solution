@@ -142,8 +142,8 @@ const Pricing = () => {
                 key={index}
                 variants={itemVariants}
                 className={`relative bg-background rounded-2xl p-6 border transition-all duration-300 hover:shadow-lg ${service.popular
-                    ? "border-primary shadow-card ring-2 ring-primary/20"
-                    : "border-border shadow-soft"
+                  ? "border-primary shadow-card ring-2 ring-primary/20"
+                  : "border-border shadow-soft"
                   }`}
               >
                 {service.popular && (
@@ -288,11 +288,11 @@ const Pricing = () => {
                   Call for Quote
                 </Button>
               </a>
-              <Link to="/contact">
+              {/* <Link to="/contact">
                 <Button variant="heroOutline" size="lg">
                   Get Free Inspection
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </motion.div>
         </div>

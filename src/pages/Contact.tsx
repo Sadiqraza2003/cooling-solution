@@ -271,12 +271,20 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Phone</h4>
-                      <a
-                        href="tel:+917651878084"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        +91 7651878084
-                      </a>
+                      <div className="flex flex-col">
+                        <a
+                          href="tel:+917651878084"
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          +91 76518 78084
+                        </a>
+                        <a
+                          href="tel:+918726931837"
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          +91 87269 31837
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -335,29 +343,29 @@ const Contact = () => {
                     Syed Naqi Haidar
                   </h4>
                   <p className="text-muted-foreground text-sm">
-                    Owner, Varansi Cooling Solution
+                    Owner, Varanasi Cooling Solution
                   </p>
                 </div>
               </div>
             </motion.div>
           </div>
-        </div>
-      </section>
 
-      {/* Map Placeholder */}
-      <section className="h-80 bg-muted relative">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-            <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
-              Serving All Over Varanasi
-            </h3>
-            <p className="text-muted-foreground">
-              Ram Nagar, Varanasi, Uttar Pradesh, India
-            </p>
+          <div className="mt-12 rounded-2xl overflow-hidden shadow-card border border-border h-[400px]">
+            <iframe
+              title="Varanasi Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.24588725355!2d82.90870659132644!3d25.320739343603407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf0d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710335261483!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
+
+
     </Layout>
   );
 };

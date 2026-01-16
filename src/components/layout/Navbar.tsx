@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Snowflake } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -26,7 +27,7 @@ const Navbar = () => {
               <Snowflake className="w-6 h-6 text-primary-foreground" />
             </div>
             <span className="font-heading font-bold text-xl text-foreground">
-              Varansi Cooling Solution
+              Varanasi Cooling Solution
             </span>
           </Link>
 
@@ -48,6 +49,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
+            <ModeToggle />
             <a href="tel:+917651878084">
               <Button variant="hero" size="default">
                 <Phone className="w-4 h-4" />
@@ -93,12 +95,15 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <a href="tel:+917651878084" className="mt-2">
-                <Button variant="hero" size="lg" className="w-full">
-                  <Phone className="w-4 h-4" />
-                  Call Now
-                </Button>
-              </a>
+              <div className="flex items-center justify-between gap-4 mt-2">
+                <ModeToggle />
+                <a href="tel:+917651878084" className="flex-1">
+                  <Button variant="hero" size="lg" className="w-full">
+                    <Phone className="w-4 h-4" />
+                    Call Now
+                  </Button>
+                </a>
+              </div>
             </div>
           </motion.div>
         )}

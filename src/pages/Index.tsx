@@ -16,6 +16,7 @@ import {
   Home as HomeIcon,
   Building2,
 } from "lucide-react";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 const services = [
   {
@@ -46,7 +47,7 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Solutions",
-    description: "Complete Varansi Cooling Solutions for offices and businesses",
+    description: "Complete Varanasi Cooling Solutions for offices and businesses",
   },
 ];
 
@@ -132,9 +133,9 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto"
+              className="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto font-medium drop-shadow-md"
             >
-              Fast, Affordable & Professional Varansi Cooling Solutions for Home and Office. Get your AC running smoothly with our expert technicians.
+              Fast, Affordable & Professional Varanasi Cooling Solutions for Home and Office. Get your AC running smoothly with our expert technicians.
             </motion.p>
 
             <motion.div
@@ -232,12 +233,13 @@ const Home = () => {
       {/* Why Choose Us Section */}
       <section className="py-20 md:py-28 bg-card">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
+              className="text-center"
             >
               <span className="text-primary font-semibold text-sm uppercase tracking-wider">
                 Why Choose Us
@@ -245,11 +247,11 @@ const Home = () => {
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
                 Trusted Cooling Experts in Varanasi
               </h2>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                With years of experience and a commitment to excellence, Varansi Cooling Solution has become the go-to choice for AC services in Varanasi. We combine technical expertise with outstanding customer service.
+              <p className="text-muted-foreground mb-12 leading-relaxed max-w-2xl mx-auto">
+                With years of experience and a commitment to excellence, Varanasi Cooling Solution has become the go-to choice for AC services in Varanasi. We combine technical expertise with outstanding customer service.
               </p>
 
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-2 gap-8 text-left">
                 {whyChooseUs.map((item, index) => (
                   <motion.div
                     key={index}
@@ -257,7 +259,7 @@ const Home = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="flex gap-4"
+                    className="flex gap-4 p-6 rounded-2xl bg-secondary/30 border border-border/50"
                   >
                     <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-6 h-6 text-primary" />
@@ -274,43 +276,12 @@ const Home = () => {
                 ))}
               </div>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="relative"
-            >
-              <div className="bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-8 md:p-12 text-primary-foreground">
-                <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4">
-                  Need AC Service?
-                </h3>
-                <p className="text-primary-foreground/80 mb-6">
-                  Get a free inspection and quote for your AC repair or installation needs. Our team is ready to help!
-                </p>
-                <div className="space-y-4">
-                  <a href="tel:+917651878084" className="block">
-                    <Button variant="hero" size="lg" className="w-full">
-                      <Phone className="w-5 h-5" />
-                      Call: +91 7651878084
-                    </Button>
-                  </a>
-                  <Link to="/contact" className="block">
-                    <Button variant="heroOutline" size="lg" className="w-full">
-                      Get Free Inspection
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/20 rounded-full blur-2xl" />
-            </motion.div>
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* CTA Section */}
       <section className="py-16 gradient-hero">
