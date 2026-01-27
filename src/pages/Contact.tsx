@@ -1,4 +1,6 @@
+// Email refactored to env var
 import { useState } from "react";
+
 import { motion } from "framer-motion";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -295,10 +297,10 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-foreground">Email</h4>
                       <a
-                        href="mailto:info@coolingsolution.in"
+                        href={`mailto:${import.meta.env.VITE_CONTACT_EMAIL}`}
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        info@coolingsolution.in
+                        {import.meta.env.VITE_CONTACT_EMAIL}
                       </a>
                     </div>
                   </div>

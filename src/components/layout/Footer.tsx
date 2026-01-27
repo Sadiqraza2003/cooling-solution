@@ -3,7 +3,7 @@ import { Snowflake, Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-primary-foreground">
+    <footer className="bg-foreground text-primary-foreground dark:bg-background dark:text-foreground dark:border-t dark:border-border transition-colors duration-300">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
@@ -16,7 +16,7 @@ const Footer = () => {
                 Varanasi Cooling Solution
               </span>
             </div>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed">
+            <p className="text-primary-foreground/70 dark:text-muted-foreground text-sm leading-relaxed">
               Your trusted partner for AC repair, installation, and maintenance services in Varanasi. Fast, reliable, and affordable.
             </p>
           </div>
@@ -35,7 +35,7 @@ const Footer = () => {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm"
+                    className="text-primary-foreground/70 dark:text-muted-foreground hover:text-primary-foreground dark:hover:text-primary transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
                 "Annual Maintenance",
               ].map((service) => (
                 <li key={service}>
-                  <span className="text-primary-foreground/70 text-sm">
+                  <span className="text-primary-foreground/70 dark:text-muted-foreground text-sm">
                     {service}
                   </span>
                 </li>
@@ -71,7 +71,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-primary mt-0.5" />
                 <div>
-                  <p className="text-sm text-primary-foreground/70">Call Us</p>
+                  <p className="text-sm text-primary-foreground/70 dark:text-muted-foreground">Call Us</p>
                   <div className="flex flex-col">
                     <a href="tel:+917651878084" className="text-sm font-medium hover:text-primary transition-colors">
                       +91 76518 78084
@@ -85,16 +85,16 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-primary mt-0.5" />
                 <div>
-                  <p className="text-sm text-primary-foreground/70">Email Us</p>
-                  <a href="mailto:info@coolingsolution.in" className="text-sm font-medium hover:text-primary transition-colors">
-                    info@coolingsolution.in
+                  <p className="text-sm text-primary-foreground/70 dark:text-muted-foreground">Email Us</p>
+                  <a href={`mailto:${import.meta.env.VITE_CONTACT_EMAIL}`} className="text-sm font-medium hover:text-primary transition-colors">
+                    {import.meta.env.VITE_CONTACT_EMAIL}
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
                 <div>
-                  <p className="text-sm text-primary-foreground/70">Location</p>
+                  <p className="text-sm text-primary-foreground/70 dark:text-muted-foreground">Location</p>
                   <p className="text-sm font-medium">Ram Nagar, Varanasi, India</p>
                 </div>
               </li>
@@ -103,12 +103,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
+        <div className="mt-12 pt-8 border-t border-primary-foreground/10 dark:border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-primary-foreground/60 text-sm">
+            <p className="text-primary-foreground/60 dark:text-muted-foreground text-sm">
               © {new Date().getFullYear()} Varanasi Cooling Solution. All rights reserved.
             </p>
-            <p className="text-primary-foreground/60 text-sm">
+            <p className="text-primary-foreground/60 dark:text-muted-foreground text-sm">
               Owner: Syed Naqi Haidar
             </p>
           </div>
